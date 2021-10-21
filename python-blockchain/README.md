@@ -7,3 +7,9 @@ source blockchahin-env/bin/activate
 ```
 pip3 install -r requirements.txt
 ```
+
+Make sure to acivate the venv
+
+```
+python -m pytest backend/tests
+```
