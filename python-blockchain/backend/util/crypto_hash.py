@@ -6,11 +6,11 @@ def crypto_hash(*args):
     Return a SHA256 of given arguments
     """
     stringified_args = sorted(map(lambda data: json.dumps(data), args))
-    print(f'stringified_args: {args}')
+    #print(f'stringified_args: {args}')
 
     joined_data = ''.join(stringified_args)
 
-    print(f'joined_data: {joined_data}')
+    #print(f'joined_data: {joined_data}')
     
 
     return hashlib.sha256(joined_data.encode('utf-8')).hexdigest()
