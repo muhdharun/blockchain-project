@@ -37,3 +37,10 @@ In the frontend directory:
 ```
 npm run start
 ```
+**Seed the backend with data**
+
+Make sure to activate the venv.
+
+```
+export SEED_DATA=True && python3 -m backend.app
+```
