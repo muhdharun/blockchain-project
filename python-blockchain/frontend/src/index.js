@@ -1,14 +1,12 @@
 import React, { createElement } from 'react';
 import ReactDOM from 'react-dom';
 import { Router, Switch, Route} from 'react-router-dom';
-import { createBrowserHistory } from 'history';
+import history from './history';
 import './index.css';
 import App from './components/App';
 import Blockchain from './components/Blockchain';
 import ConductTransaction from './components/ConductTransaction';
 import TransactionPool from './components/TransactionPool';
-
-const history = createBrowserHistory();
 
 ReactDOM.render(
   <Router history={history}>
